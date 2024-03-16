@@ -29,19 +29,7 @@ spec:
         clusterDomain: ${CLUSTER_DOMAIN}
     etcd:
       clusterDomain: ${CLUSTER_DOMAIN}
-    kubeProxyReplacement: true
-    kubeProxyReplacementHealthzBindAddr: 0.0.0.0:10256
-    l2announcements:
-      enabled: true
-    loadBalancer:
-      algorithm: maglev
-      mode: dsr
-    localRedirectPolicy: true
-    operator:
-      replicas: 1
-      rollOutPods: true
-    rollOutCiliumPods: true
-    routingMode: native
+      kubeProxyReplacement: strict
     securityContext:
       capabilities:
         ciliumAgent:
