@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 10m0s
-  path: ./manifests/infrastructure/cilium
+  path: /manifests/infrastructure/cilium
   prune: true
   sourceRef:
     kind: GitRepository
