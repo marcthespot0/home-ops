@@ -10,8 +10,6 @@ spec:
     matchExpressions:
       - key: node-role.kubernetes.io/nothing
         operator: DoesNotExist
-  interfaces:
-  - ^enxbc[0-9a-z]+
   externalIPs: true
   loadBalancerIPs: true
 ---
